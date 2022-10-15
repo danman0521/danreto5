@@ -32,7 +32,7 @@ public class ReservationRepository {
     }
 
     public List<Reservation> reservationTime(Date startDate, Date endDate){
-        return reservationCrudRepositoryInterfaz.findAllByStartDateAfterAndStartDateBefore(startDate, startDate);
+        return reservationCrudRepositoryInterfaz.findAllByStartDateAfterAndStartDateBefore(startDate, endDate);
     }
   
     public   List<Object[]> reportClient() {
